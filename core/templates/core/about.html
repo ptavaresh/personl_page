@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+{% block title %}Acerca de {% endblock %}
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+{% block content %}
+      <div class="row">
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Pedro Tavares</h2>
+    <p>Nacido en Guadalajara, Jalisco, México, Egresado de la Universidad Tecnologica de Guadalajara (UTEG) en el año 2013,
+        Actualmente laborando en el sector de IT en la ciudad de Guadalajara, usualmente manejando tecnologias para
+        el desarrollo web del lado del backend principalmente.</p>
+    <p>El stack de desarrollo que actualmente uso es python 2.7 / 3.6 usango como frameworks django 1.8 / 2.0 y Flask.</p>
+</div>
+          </div>
+{% endblock %}
+
+
